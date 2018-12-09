@@ -5,6 +5,9 @@
 </head>
 <body>
 @include('inc.navbar')
-@yield('content')
+<div class="text-center">
+    @yield('content')
+</div>
+
 </body>
 </html>
