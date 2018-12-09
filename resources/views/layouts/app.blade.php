@@ -19,6 +19,7 @@
 
         <div id="container">
             <div class="text-center">
+        @include('inc.messages')
         @yield('content')
             </div>
         </div>
