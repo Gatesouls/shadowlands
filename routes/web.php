@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', 'PagesController@getHomePage');
+Auth::routes();
+
+Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/about', 'PagesController@getAboutPage');
+
+Route::get('/admin', 'PagesController@getAdminPage');
+
