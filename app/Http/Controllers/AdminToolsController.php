@@ -17,11 +17,15 @@ class AdminToolsController extends Controller
         $category->save();
 
         return redirect('/admin/create-category')->with('success', 'Category added');
+    }
 
+    public function editCategory() {
+        return $this->_displayCategoriesInView('Admin_tools.edit-category');
 
+    }
 
-
-
-
+    private function _displayCategoriesInView($view) {
+        $categories = Category::all();
+        return view($view)->with('categories', $categories);
     }
 }

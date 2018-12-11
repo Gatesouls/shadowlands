@@ -25,7 +25,7 @@ Route::get('/admin', 'PagesController@getAdminPage');
 
 Route::get('admin/create-category', 'PagesController@getCreateCategoryPage');
 
-Route::get('admin/edit-category', 'PagesController@getEditCategoryPage');
+Route::get('admin/edit-category', 'AdminToolsController@editCategory');
 
 Route::get('admin/delete-category', 'PagesController@getDeleteCategoryPage');
 
